@@ -35,3 +35,17 @@ const vips = [
   "Amal Clooney",
   "Maneskin",
 ];
+
+const tavoloOspiti = vips.map((ospite) => {
+  let randomNumber = getRandomNumber(1, 11);
+  if (randomNumber == newNumber) {
+    newNumber = getRandomNumber(1, 11);
+  }
+  const object = {
+    table: "Tavolo Vip",
+    nome: ospite,
+    posto: randomNumber,
+  };
+  console.log(randomNumber);
+  // console.log(object);
+});

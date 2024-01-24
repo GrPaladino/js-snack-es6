@@ -38,9 +38,10 @@ const vips = [
 
 const tavoloOspiti = vips.map((ospite, tavolo) => {
   const object = {
-    table: "Tavolo Vip",
+    tavolo: "Tavolo Vip",
     nome: ospite,
     posto: tavolo + 1,
   };
-  console.log(object);
+  return object;
 });
+console.log(tavoloOspiti);

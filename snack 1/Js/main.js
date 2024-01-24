@@ -36,16 +36,11 @@ const vips = [
   "Maneskin",
 ];
 
-const tavoloOspiti = vips.map((ospite) => {
-  let randomNumber = getRandomNumber(1, 11);
-  if (randomNumber == newNumber) {
-    newNumber = getRandomNumber(1, 11);
-  }
+const tavoloOspiti = vips.map((ospite, tavolo) => {
   const object = {
     table: "Tavolo Vip",
     nome: ospite,
-    posto: randomNumber,
+    posto: tavolo + 1,
   };
-  console.log(randomNumber);
-  // console.log(object);
+  console.log(object);
 });

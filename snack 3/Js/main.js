@@ -40,3 +40,18 @@ bikes.forEach((bike) => {
 const { brand, weightKg } = lighterWeight;
 console.log(`brand: ${brand};
 weightKg: ${weightKg}`);
+
+const containerElement = document.getElementById("container-element");
+const lighterBike = lighterWeight;
+console.log(lighterBike);
+
+let htmlElement = `
+<h1 class="py-3">The lighter bike is:</h1>
+
+<div class="card">
+
+<p>Brand: ${brand}</p>
+<p>Weight: ${weightKg}</p>
+</div>`;
+
+containerElement.innerHTML = htmlElement;

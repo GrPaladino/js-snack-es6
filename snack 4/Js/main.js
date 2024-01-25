@@ -41,6 +41,9 @@ const teams = [
   },
 ];
 
+const containerElement = document.getElementById("element-container");
+let teamHtml = "";
+
 teams.forEach((team) => {
   team.score = getRandomNumber(1, 100);
   team.foul = getRandomNumber(1, 100);
@@ -52,6 +55,19 @@ const newTeams = [];
 
 teams.forEach((team) => {
   const newObject = { name: team.name, foul: team.foul };
+  const { name, foul } = newObject;
+
+  teamHtml += `
+  
+    <div class="col-3">
+        <div class="card">
+            <div class="team-name">Name: ${name}</div>
+            <div class="team-fouls">Foul: ${foul}</div>
+        </div>
+    </div>
+  `;
   return newTeams.push(newObject);
 });
+
+containerElement.innerHTML = teamHtml;
 console.log(newTeams);

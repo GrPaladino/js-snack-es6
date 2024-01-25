@@ -29,12 +29,14 @@ const bikes = [
 ];
 
 const [bike1, bike2, bike3, bike4, bike5, bike6] = bikes;
-const lighterWeight = bike3.weightKg;
-let lighterBike;
+let lighterWeight = bike1;
 
 bikes.forEach((bike) => {
-  if (bike.weightKg == lighterWeight) {
-    lighterBike = bike;
+  if (bike.weightKg < lighterWeight.weightKg) {
+    lighterWeight = bike;
   }
 });
-console.log(lighterBike);
+
+const { brand, weightKg } = lighterWeight;
+console.log(`brand: ${brand};
+weightKg: ${weightKg}`);

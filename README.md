@@ -59,3 +59,11 @@ Valorizzare le proprietà dei punti fatti e dei falli subiti con numeri randomic
 Creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti, recuperandoli con il destructuring, e stampiamo tutto in console.
 BONUS
 Stampare in pagina oltre che in console!
+
+# SNACK 5
+
+Dato un array di auto, chiediamo all'utente con un prompt quanti viaggiatori sono a viaggiare. Scegliete un'auto adatta al numero dei viaggiatori.
+
+# SNACK 6
+
+Macedonia
